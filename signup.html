@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signUp</title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+}
+        .dark-mode {
+            background-color: black;
+            color: white; }
+            .h{
+                padding-top: 5%;
+            }
+            h1{
+                color: rgb(22, 76, 124);
+                font-size: 40px;
+            }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <hr>
+    <button onclick="myFunction()">Toggle dark mode</button>
+    
+    <form action="process-signup.php" method="post">
+
+        <div class="h">
+            <label for="firstName">First Name</label>
+            <input type="text" id ="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id ="lastName" name="lastName">
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id ="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id ="password" name="password">
+        </div>
+        <br>
+        <div>
+            <label for="password confirmation">Repeat Password</label>
+            <input type="password" id ="password_confirmation" name="password_confirmation">
+        </div>
+        <br>
+        <div>
+            <label for="gender">Gender</label>
+            <br>
+            <br>
+            <div>
+                <input type="radio" name="gender" value="male" id="m" >
+                <label for="m">Male</label>
+                <input type="radio" name="gender" value="female" id="f" >
+                <label for="f">Female</label>
+            </div>
+        </div>
+        <br>
+        
+        <button name="btntest">sign up</button>
+
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
